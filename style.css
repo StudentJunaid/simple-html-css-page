@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    width: 100vw;
+    height: 100vh;
+}
+
+nav{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    border-bottom: 2px solid #0e0909;
+}
+
+nav h1{
+    font-size: 3vw;
+}
+
+nav .nav-Part2{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+nav .nav-Part2 h4{
+    font-size: 1.6vw;
+}
+
+nav .nav-Part2 i{
+    display: none;
+}
+
+nav button{
+    background-color: orangered;
+    color: white;
+    padding: 1vw 1.5vw;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.content{
+    display: flex;
+    height: calc(100% - 70px);
+    width: 100%;
+    overflow: hidden;
+}
+
+.content .left{
+    height: 100%;
+    width: 60%;
+    padding: 5vw 3vw;
+}
+
+.left h1{
+    width: 100%;
+    font-size: 5.5vw;
+    line-height: 6vw;
+    margin-bottom: 2vw;
+}
+
+.left h1 span{
+    color: orangered;
+}
+
+.left p{
+    width: 80%;
+    margin-bottom: 2vw;
+}
+
+
+.left button{
+    background-color: orangered;
+    color: white;
+    padding: 1vw 1.5vw;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.content .right{
+    height: 100%;
+    width: 40%;
+}
+
+.right img{
+    width: 100%;
+    background-position: center;
+    background-image: cover;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    nav{
+        padding: 4vw 6vw;
+    }
+
+    nav h1{
+        font-size: 4vw;
+    }
+
+    .nav-Part2 h4{
+        display: none;
+    }
+    nav .nav-Part2 i{
+        display: block;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .content .left{
+        padding: 3vw 4vw;
+        width: 100%;
+        height: 40%;
+    }
+
+    .left h1{
+        font-size: 9vw;
+        line-height: 9vw;
+        margin-bottom: 3vw;
+    }
+    .left p{
+        font-size: 5vw;
+        width: 100%;
+        margin-bottom: 3vw;
+    }
+    .left button{
+        padding: 4vw 4vw;
+        margin-top: 3vw;
+    }
+    .content .right{
+            width: 100%;
+            height: 60%;
+    }
+}
